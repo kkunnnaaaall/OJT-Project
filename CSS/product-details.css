@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=EB+Garamond&family=Merriweather:wght@300&family=Montserrat:wght@500&family=Roboto&family=Tulpen+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: linear-gradient(0deg, #0085b4, #021945);
+}
+
+.nav li h6 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    color: #ccdee3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "IBM Plex Mono", sans-serif;
+    color: #ccdee3;
+}
+
+p,
+pre,
+a {
+    font-family: "IBM Plex Mono", sans-serif;
+    color: #ccdee3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.icon {
+    margin-top: 13px;
+    padding-right: 9px;
+}
+
+.icon i{
+    color: #faebd7;
+}
+
+.tele {
+    margin-top: 2px;
+    padding-right: 9px;
+}
+
+.contact {
+    justify-content: end;
+    display: flex;
+    color: #faebd7;
+}
+
+.mail {
+    padding-right: 90px;
+}
+
+.nav ul {
+    display: flex;
+    height: 8vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav .mega-drop {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    height: 30vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.mega-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mega-child-div {
+    padding: 2rem;
+    text-align: center;
+}
+
+.nav .mega-grid .mega-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-links a {
+    color: #0085b4;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.mega-links li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.mega-links li a:hover {
+    font-size: 30px;
+    color: #8fc2d3;
+}
+
+.mega-child-div h3 {
+    color: #fff;
+}
+
+.nav ul li:hover .mega-drop {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+#dbc {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+#dbc .main-nav:hover {
+    background-color: #ccdee4;
+    border: 3px solid #8fc2d3;
+    color: #021945;
+}
+
+#ipc {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+#ipc .main-nav:hover {
+    background-color: #ccdee4;
+    border: 3px solid #8fc2d3;
+    color: #021945
+}
+
+#vic {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+#vic .main-nav:hover {
+    background-color: #ccdee4;
+    border: 3px solid #8fc2d3;
+    color: #021945
+}
+
+#ac {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+#ac .main-nav:hover {
+    background-color: #ccdee4;
+    border: 3px solid #8fc2d3;
+    color: #021945
+}
+
+#cca {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+#cca .main-nav:hover {
+    background-color: #ccdee4;
+    border: 3px solid #8fc2d3;
+    color: #021945
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 55px;
+    height: 100%;
+}
+
+.gg-mail,
+.gg-mail::after {
+    display: block;
+    box-sizing: border-box;
+    height: 13px;
+    border: 2px solid
+}
+
+.gg-mail {
+    overflow: hidden;
+    transform: scale(var(--ggs, 1));
+    position: relative;
+    width: 12px;
+    border-radius: 2px
+}
+
+.gg-mail::after {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    width: 14px;
+    transform: rotate(-45deg);
+    bottom: 3px;
+    left: 0
+}
+
+.gg-phone {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: scale(var(--ggs, 1))
+}
+
+.gg-phone::after,
+.gg-phone::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-phone::after {
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    left: 2px;
+    bottom: 2px;
+    background:
+        linear-gradient(to left,
+            currentColor 10px,
+            transparent 0) no-repeat right 11px/6px 4px,
+        linear-gradient(to left,
+            currentColor 10px,
+            transparent 0) no-repeat -1px 0/4px 6px
+}
+
+.gg-phone::before {
+    width: 20px;
+    height: 20px;
+    border: 6px double;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    bottom: 2px;
+    left: 2px
+}
+
+.fa-solid {
+    display: flex;
+    justify-content: end;
+}
+
+.toggle-btn {
+    position: relative;
+    top: -28px;
+}
+
+.modal-dialog {
+    margin: 0;
+    width: 50%;
+}
+
+.modal-content {
+    border-radius: 0;
+    height: 150vh;
+    overflow-y: scroll;
+}
+
+.modal-header {
+    display: none;
+}
+
+.modal-body {
+    width: 88%;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    flex: unset;
+}
+
+.modal-body h5 {
+    color: #fff;
+}
+
+.phone-drop h5 {
+    padding-bottom: 5px;
+}
+
+.phone-drop hr {
+    margin-bottom: 1.3rem 0;
+    color: #3dbbde;
+}
+
+.modal-body .phone-drop ul {
+    text-align: justify;
+}
+
+.modal-body .phone-drop h5{
+    text-align: center;
+}
+
+.modal-body ul {
+    padding: 0px;
+}
+
+.modal-body ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.modal-body ul li a {
+    color: white;
+    font-size: larger;
+}
+
+.con{
+    display: flex;
+}
+
+.gmail{
+    margin-top: 6px;
+}
+
+.telephone{
+    margin-top: 10px;
+}
+
+.telephone h5{
+    display: flex;
+}
+
+.product {
+    margin: 5px;
+}
+
+.product .phone-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .9px solid #8fc2d3;
+    margin: 15px;
+}
+
+.company-info {
+    background-color: #021945;
+    color: #fff;
+    height: auto;
+    text-align: center;
+}
+
+.company-info .google-maps .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat {
+    background-color: #25D366;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    border-radius: 90px;
+    height: 65px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.chat a {
+    display: flex;
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+}
+
+.chat i {
+    color: #ffffff;
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 55px;
+}
+
+
+@media (max-width:767px) {
+
+    .modal-dialog {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:767px) {
+    .nav {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .name {
+        text-align: center;
+    }
+
+}
+
+@media (min-width:912px) {
+    .company-info {
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    .google-maps .branch {
+        height: 200px;
+    }
+
+    .company-info .google-maps .main {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    .product {
+        border: 2px solid #8fc2d3;
+        margin: 20px;
+        display: flex;
+
+    }
+
+    .img {
+        border: .2px solid #8fc2d3;
+        margin: 15px;
+    }
+
+    .name {
+        margin: 15px;
+        height: auto;
+    }
+
+    .details {
+        padding-top: 100px;
+    }
+
+    .product .phone-img {
+        display: none;
+    }
+}
